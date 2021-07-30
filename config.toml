@@ -1,0 +1,59 @@
+# Basic
+title = "Rushail Khan"
+baseURL = "https://rushail.github.io/"
+theme = "vno-hugo"
+
+# Pagination
+paginate = 10
+paginatePath = "page"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    identifier = "projects"
+    url = "http://rushail.github.io/"
+    weight = 10
+
+[taxonomies]
+    tag = "tags"
+    
+[params]
+author = "Rushail"
+subtitle = "blog website for Rushail"
+description = "site to write and maintain blogs from Rushail Khan"
+welcomeMessage = "Oh What a World"
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+coverColor = "red"
+
+[params.comment]
+disqus = "vno-hugo"
+duoshuo = ""
+
+# Take a look on https://github.com/gitalk/gitalk#usage for more info.
+[params.comment.gitalk]
+ID = ""
+secret = ""
+repo = ""
+owner = ""
+
+[params.social]
+weibo = ""
+github = "rushail"
+twitter = ""
+mail = "rushailkh11@gmail.com"
+
+[params.ga]
+ID = "your_ga_id"
+host = "your_host"
+
+# The blog button should not be removed.
+[params.blogButton]
+title = "Blog"
+description = "Visit blog"
+
+[permalinks]
+posts = "/:year/:month/:title/"
