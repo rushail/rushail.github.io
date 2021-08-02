@@ -1,59 +1,30 @@
-# Basic
-title = "Rushail Khan"
-baseURL = "https://rushail.github.io/"
-theme = "vno-hugo"
-
-# Pagination
+BaseUrl= "https://rushail.github.io/"
+LanguageCode= "en-US"
+Title= "Rushail Khan"
 paginate = 10
-paginatePath = "page"
+DisqusShortname = ""
+Copyright = "All rights reserved - 2021"
+canonifyurls = true
 
-[outputs]
-  home = ["HTML", "RSS"]
-
-[menu]
-  [[menu.main]]
-    name = "Projects"
-    identifier = "projects"
-    url = "http://rushail.github.io/"
-    weight = 10
-
-[taxonomies]
-    tag = "tags"
-    
-[params]
-author = "Rushail"
-subtitle = "blog website for Rushail"
-description = "site to write and maintain blogs from Rushail Khan"
-welcomeMessage = "Oh What a World"
-
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-coverColor = "red"
-
-[params.comment]
-disqus = "vno-hugo"
-duoshuo = ""
-
-# Take a look on https://github.com/gitalk/gitalk#usage for more info.
-[params.comment.gitalk]
-ID = ""
-secret = ""
-repo = ""
-owner = ""
-
-[params.social]
-weibo = ""
-github = "rushail"
-twitter = ""
-mail = "rushailkh11@gmail.com"
-
-[params.ga]
-ID = "your_ga_id"
-host = "your_host"
-
-# The blog button should not be removed.
-[params.blogButton]
-title = "Blog"
-description = "Visit blog"
+[author]
+  name = "rushail"
 
 [permalinks]
-posts = "/:year/:month/:title/"
+    post = "/post/:year/:month/:day/:slug"
+
+[params]
+  description = "this is my personal blog site"
+  cover = "images/user.jpg"
+  author = "rushail"
+  authorlocation = ""
+  authorwebsite = "https://rushail.github.io/"
+  bio= "oh what a world"
+  logo = "images/user.png"
+  googleAnalyticsUserID = ""
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink = ""
+  githubName = "rushail"
+  twitterName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+  mainSections = ["post"]
