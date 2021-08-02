@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["Say Hi","my first blog"]
+tags: ["general","first blog"]
 title: "general updates"
 date: 2021-08-03T01:37:37+04:00
 math: false
